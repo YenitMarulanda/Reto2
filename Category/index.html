@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <!-- Formulario Crear o Actualizar -->
+        <div class="post">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="color-prymary">Create</h2>
+                </div>
+                <div class="col-12">
+                    <form id="formCategory">
+                        <label>Id:</label>
+                        <input id="myId" type="number" />
+
+                        <label>Name:</label>
+                        <input id="name" type="text" />
+                        <div id="btnForm">
+                            <input type="submit" id="btnCreate" onclick="createCategory()" value="Create" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Fin formulario Crear o Actualizar -->
+
+        <!-- Lista detalles -->
+        <div class="post">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="color-primary">Details</h2>
+                </div>
+                <div class="col-12">
+                    <div id="details">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Fin lista detalles -->
+
+        <!-- Tabla lista categorias -->
+        <div class="get">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="color-prymary">List of Category</h1>
+                </div>
+                <div class="col-6">
+                    <a href="#" class="btn btn-primary">New Category</a>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="table table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyCategory">
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+        <!-- Fin tabla lista categorias -->
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="js/category.js"></script>
+</body>
+
+</html>
